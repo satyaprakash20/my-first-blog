@@ -8,6 +8,5 @@ db.sqlite3
 /Include
 /Lib
 /Scripts
-manage.py
 pyvenv.cfg
 pip-selfcheck.json
