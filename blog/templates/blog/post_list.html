@@ -1,12 +1,19 @@
+{% load staticfiles %}
 <html>
-<div>
-    <h1><a href="/">Satya's Blog</a></h1>
-</div>
+	<head>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	</head>
 
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}</html>
+<body>
+	<div>
+		<h1><a href="/">Satya's Blog</a></h1>
+	</div>
+	{% for post in posts %}
+		<div>
+			<p>published: {{ post.published_date }}</p>
+			<h1><a href="">{{ post.title }}</a></h1>
+			<p>{{ post.text|linebreaksbr }}</p>
+		</div>
+	{% endfor %}
+</body>
+</html>
