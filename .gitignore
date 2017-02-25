@@ -7,5 +7,7 @@ db.sqlite3
 /Include
 /Lib
 /Scripts
+/cx_Oracle-doc
+Output.csv
 pyvenv.cfg
 pip-selfcheck.json
